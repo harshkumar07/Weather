@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Weather Web</h1>
+        <label class="switch">
+          <input type="checkbox" id="dark-mode-toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="form">
+        <input type="text" id="location-input" placeholder="Enter location">
+        <button id="search-btn">Search</button>
+      </div>
+      <div class="weather">
+        <img id="error" src="error-image.png" alt="error-page" style="display:none; width: 100%; padding-top: 50px;">
+        <div id="location"></div>
+        <div id="weather-icon"></div>
+        <div id="temperature"></div>
+        <div id="description"></div>
+      </div>
+    </div>
+    <div><button id="get-location" class="get-location"><img id="location-image"  src="location-icon.png" alt="location-img"></button></div>
+    <script src="script.js"></script>
+  </body>
+</html>
